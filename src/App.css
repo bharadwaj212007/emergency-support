@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2ff;
+}
+
+/* LOGIN PAGE */
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: rgb(9, 3, 3);
+  width: 420px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.login-heading {
+  margin-bottom: 25px;
+  color: #374151;
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.login-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+/* DASHBOARD */
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.dark-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.sos-button {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.primary-button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.section-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+/* DARK MODE */
+
+.dark {
+  background: #111827;
+  color: white;
+  min-height: 100vh;
+}
+
+.dark .section-card {
+  background: #1f2937;
+  color: white;
+}
+
+.dark .primary-button {
+  background: #3b82f6;
+}
+
+.dark .dark-btn {
+  background: white;
+  color: black;
+}
+
+.dark input {
+  background: #374151;
+  color: white;
+  border: 1px solid #6b7280;
+}
