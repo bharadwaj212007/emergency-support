@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react'
-import { FaAmbulance } from "react-icons/fa";
+import ambulanceIcon from './assets/ambulance-solid-svgrepo-com.svg'
 import './App.css'
 
 import Login from './components/Login'
@@ -67,13 +67,9 @@ const addToHistory = (item) => {
     {!isLoggedIn ? (
       <div className="login-page">
         <div className="login-card">
-          <div className="icon-box">
-  <FaAmbulance className="ambulance-icon" />
-</div>
-
-<h1 className="main-heading">
-  Smart Emergency Support
-</h1>
+          <h1 className="main-heading">
+            🚨 Smart Emergency Support
+          </h1>
 
           <h2 className="login-heading">
             Login / Signup
@@ -155,7 +151,14 @@ const addToHistory = (item) => {
             className="primary-button"
             onClick={() => setActiveSection('ambulance')}
           >
-            🚑 Ambulance
+            <div className="icon-box">
+  <img
+    src={ambulanceIcon}
+    alt="ambulance"
+    className="ambulance-image"
+  />
+</div>
+ Ambulance
           </button>
           
 
