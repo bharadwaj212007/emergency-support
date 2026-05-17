@@ -1,4 +1,11 @@
 import { useEffect, useState } from 'react'
+import L from "leaflet"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import {
+  faTruckMedical,
+} from '@fortawesome/free-solid-svg-icons'
+
 
 import {
   MapContainer,
@@ -6,6 +13,7 @@ import {
   Marker,
   Popup,
 } from 'react-leaflet'
+
 
 function AmbulanceTracker() {
   const [position, setPosition] =
@@ -24,7 +32,18 @@ function AmbulanceTracker() {
 
     return () => clearInterval(interval)
   }, [])
-
+const ambulanceIcon = new L.DivIcon({
+  html: `
+    <div style="
+      font-size:40px;
+      color:red;
+    ">
+      🚑
+    </div>
+  `,
+  className: '',
+  iconSize: [40, 40],
+})
   return (
     <div style={{ marginTop: '30px' }}>
       <h2>Live Ambulance Tracking</h2>
@@ -45,7 +64,9 @@ function AmbulanceTracker() {
           position={[
             position.lat,
             position.lng,
+            
           ]}
+          icon={ambulanceIcon}
         >
           <Popup>
             Ambulance is on the way 🚑

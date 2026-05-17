@@ -62,6 +62,7 @@ const addToHistory = (item) => {
   
 
   return (
+    <div className="main-container">
   <>
     {!isLoggedIn ? (
       <div className="login-page">
@@ -128,7 +129,7 @@ const addToHistory = (item) => {
           className="sos-button"
           onClick={handleSOS}
         >
-          SOS
+       SOS
         </button>
 
         <div className="dashboard-buttons">
@@ -154,15 +155,15 @@ const addToHistory = (item) => {
           </button>
           
 
-<button onClick={() => setActiveSection('blood')}>
-  🩸 Blood Donors
+<button className="primary-button" onClick={() => setActiveSection('blood')}>
+   Blood Donors
 </button>
 
-<button onClick={() => setActiveSection('fire')}>
-  🔥 Fire Station
+<button className="primary-button" onClick={() => setActiveSection('fire')}>
+   Fire Station
 </button>
 
-<button onClick={() => setActiveSection('disaster')}>
+<button className="primary-button" onClick={() => setActiveSection('disaster')}>
   🌪 Disaster Relief
 </button>
           <button
@@ -253,6 +254,7 @@ const addToHistory = (item) => {
       </div>
     )}
   </>
+  </div>
 )
     
 }
