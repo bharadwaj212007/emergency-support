@@ -1,6 +1,9 @@
 
 import { useEffect, useState } from 'react'
 import ambulanceIcon from './assets/ambulance-solid-svgrepo-com.svg'
+import locationIcon from './assets/location-svgrepo-com.svg'
+import HospitalIcon from './assets/hospital-svgrepo-com.svg'
+import BloodIcon from './assets/blood-drop-svgrepo-com.svg'
 import './App.css'
 
 import Login from './components/Login'
@@ -137,14 +140,27 @@ const addToHistory = (item) => {
             className="primary-button"
             onClick={() => setActiveSection('location')}
           >
-            📍 Location
+            <div className="location-icon-box">
+  <img
+    src={locationIcon}
+    alt="location"
+    className="location-image"
+  />
+</div> Location
           </button>
 
           <button
             className="primary-button"
             onClick={() => setActiveSection('hospitals')}
           >
-            🏥 Hospitals
+            <div>
+            <img
+    src={HospitalIcon}
+    alt="location"
+    className="ambulance-image"
+  /> 
+  </div>
+  Hospitals
           </button>
 
           <button
@@ -163,7 +179,14 @@ const addToHistory = (item) => {
           
 
 <button className="primary-button" onClick={() => setActiveSection('blood')}>
-   Blood Donors
+  <div className="location-icon-box">
+  <img
+    src={BloodIcon}
+    alt="Blood"
+    className="location-image"
+  />
+</div>
+   Blood Donors 
 </button>
 
 <button className="primary-button" onClick={() => setActiveSection('fire')}>

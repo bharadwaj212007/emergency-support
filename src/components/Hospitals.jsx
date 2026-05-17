@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-
+import HospitalIcon from '../assets/hospital-svgrepo-com.svg'
 function Hospitals() {
   const [hospitals, setHospitals] = useState([])
 
@@ -104,7 +104,13 @@ function Hospitals() {
                 fontSize: '16px',
               }}
             >
-              📍 View Hospital Location
+             <div>
+                         <img
+                 src={HospitalIcon}
+                 alt="location"
+                 className="ambulance-image"
+               /> 
+               </div> View Hospital Location
             </button>
           </div>
         ))
