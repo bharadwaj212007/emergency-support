@@ -259,3 +259,11 @@ p {
 .dark p {
   color: #d1d5db;
 }
+
+
+.ambulance-image {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}

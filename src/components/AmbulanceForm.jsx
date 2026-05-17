@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import ambulanceIcon from "../assets/ambulance-solid-svgrepo-com.svg";
 import { database } from '../firebase'
 
 import { ref, push } from 'firebase/database'
@@ -86,7 +86,11 @@ function AmbulanceForm({ location }) {
       <br />
 
       <button onClick={requestAmbulance}>
-        Request Ambulance 🚑
+        Request Ambulance <img
+    src={ambulanceIcon}
+    alt="ambulance"
+    className="ambulance-image"
+  />
       </button>
     </div>
   )
