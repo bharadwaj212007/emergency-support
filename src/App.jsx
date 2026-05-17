@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react'
-
+import { FaAmbulance } from "react-icons/fa";
 import './App.css'
 
 import Login from './components/Login'
@@ -67,9 +67,13 @@ const addToHistory = (item) => {
     {!isLoggedIn ? (
       <div className="login-page">
         <div className="login-card">
-          <h1 className="main-heading">
-            🚨 Smart Emergency Support
-          </h1>
+          <div className="icon-box">
+  <FaAmbulance className="ambulance-icon" />
+</div>
+
+<h1 className="main-heading">
+  Smart Emergency Support
+</h1>
 
           <h2 className="login-heading">
             Login / Signup
