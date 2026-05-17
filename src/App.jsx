@@ -4,6 +4,11 @@ import ambulanceIcon from './assets/ambulance-solid-svgrepo-com.svg'
 import locationIcon from './assets/location-svgrepo-com.svg'
 import HospitalIcon from './assets/hospital-svgrepo-com.svg'
 import BloodIcon from './assets/blood-drop-svgrepo-com.svg'
+import FireIcon from './assets/blood-drop-svgrepo-com.svg'
+import fireStationsicon from './assets/fire-svgrepo-com.svg'
+import Disastericon from './assets/warning-filled-svgrepo-com.svg'
+import histryicon from './assets/library-svgrepo-com.svg'
+import PublicIcon from './assets/person-svgrepo-com.svg'
 import './App.css'
 
 import Login from './components/Login'
@@ -190,24 +195,48 @@ const addToHistory = (item) => {
 </button>
 
 <button className="primary-button" onClick={() => setActiveSection('fire')}>
-   Fire Station
+    <div className="location-icon-box">
+  <img
+    src={fireStationsicon}
+    alt="location"
+    className="location-image"
+  />
+</div>Fire Station
 </button>
 
 <button className="primary-button" onClick={() => setActiveSection('disaster')}>
-  🌪 Disaster Relief
+  <div>
+  <img
+    src={Disastericon}
+    alt="location"
+    className="location-image"
+  />
+</div> Disaster Relief
 </button>
           <button
             className="primary-button"
             onClick={() => setActiveSection('history')}
           >
-            📜 History
+            <div className="location-icon-box">
+  <img
+    src={histryicon}
+    alt="location"
+    className="location-image"
+  />
+</div> History
           </button>
 
           <button
             className="primary-button"
             onClick={() => setActiveSection('admin')}
           >
-            ⚙️ Admin
+            <div>
+            <img
+    src={PublicIcon}
+    alt="location"
+    className="ambulance-image"
+  /> 
+  </div> Admin
           </button>
         </div>
 

@@ -5,7 +5,7 @@ import {
   Marker,
   Popup,
 } from "react-leaflet"
-
+import Disastericon from '../assets/warning-filled-svgrepo-com.svg'
 import "leaflet/dist/leaflet.css"
 
 function DisasterSupport({
@@ -89,7 +89,13 @@ function DisasterSupport({
   return (
     <div className="section-card">
       <h1>
-        🌪 Natural Disaster
+         <div className="location-icon-box">
+            <img
+              src={Disastericon}
+              alt="location"
+              className="location-image"
+            />
+          </div> Natural Disaster
         Support
       </h1>
 
@@ -168,18 +174,30 @@ function DisasterSupport({
               "pointer",
           }}
         >
-          🌪 Request Rescue
+          <div className="location-icon-box">
+            <img
+              src={Disastericon}
+              alt="location"
+              className="location-image"
+            />
+          </div> Request Rescue
         </button>
       </div>
 
-      {/* MAP */}
+  
       <h2
         style={{
           marginTop: "40px",
           textAlign: "center",
         }}
       >
-        📍 Live Disaster
+       <div className="location-icon-box">
+         <img
+           src={Disastericon}
+           alt="location"
+           className="location-image"
+         />
+       </div> Live Disaster
         Tracking
       </h2>
 

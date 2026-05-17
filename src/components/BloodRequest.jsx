@@ -8,7 +8,7 @@ function BloodRequest() {
         marginTop: '30px',
       }}
     >
-      <h2>🩸 Blood Needed Support</h2>
+      <h2> Blood Needed Support</h2>
 
       <p>
         Request blood donors during medical emergencies.

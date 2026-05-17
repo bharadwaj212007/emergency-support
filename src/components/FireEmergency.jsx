@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import fireStationsicon from '../assets/fire-svgrepo-com.svg'
 import {
   MapContainer,
   TileLayer,
@@ -60,7 +61,7 @@ function FireEmergency({ location, addToHistory }) {
     }
 
     // POPUP
-    alert("🔥 Fire Engine Requested Successfully 🚒")
+    alert(" Fire Engine Requested Successfully 🚒")
 
     // CLEAR INPUTS
     setName("")
@@ -69,9 +70,14 @@ function FireEmergency({ location, addToHistory }) {
 
   return (
     <div className="section-card">
-      <h1>🔥 Fire Emergency Support</h1>
+      <h1>  <div className="location-icon-box">
+        <img
+          src={fireStationsicon}
+          alt="location"
+          className="location-image"
+        />
+      </div>Fire Emergency Support</h1>
 
-      {/* INPUTS */}
       <div
         style={{
           display: "flex",
@@ -117,7 +123,13 @@ function FireEmergency({ location, addToHistory }) {
             cursor: "pointer",
           }}
         >
-          🔥 Request Fire Engine
+          <div>
+                                   <img
+                           src={fireStationsicon}
+                           alt="location"
+                           className="ambulance-image"
+                         /> 
+                         </div> Request Fire Engine
         </button>
       </div>
 

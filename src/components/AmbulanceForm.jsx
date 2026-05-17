@@ -48,6 +48,9 @@ function AmbulanceForm({ location }) {
         borderRadius: '10px',
       }}
     >
+       
+        
+  
       <h2>Request Ambulance</h2>
 
       <input
@@ -86,11 +89,14 @@ function AmbulanceForm({ location }) {
       <br />
 
       <button onClick={requestAmbulance}>
-        Request Ambulance <img
+        <div>
+        <img
     src={ambulanceIcon}
     alt="ambulance"
     className="ambulance-image"
   />
+  </div>
+        Request Ambulance 
       </button>
     </div>
   )

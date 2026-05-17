@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-
+import histryicon from '../assets/library-svgrepo-com.svg'
 import { database } from '../firebase'
 
 import {
@@ -70,7 +70,13 @@ function RequestHistory() {
         borderRadius: '10px',
       }}
     >
-      <h2>Emergency Request History</h2>
+       
+        <img
+          src={histryicon}
+          alt="location"
+          className="history"
+        />
+       <h2> Emergency Request History</h2>
 
       {requests.length > 0 ? (
         requests.map((request) => (
@@ -126,4 +132,4 @@ function RequestHistory() {
   )
 }
 
-export default RequestHistory
+export default RequestHistory 
